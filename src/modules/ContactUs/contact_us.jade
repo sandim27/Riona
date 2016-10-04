@@ -1,0 +1,23 @@
+.contact-container.section-container.section-container-gray
+    .container
+        .row
+            .col-sm-12.contact.section-description.wow.fadeIn
+                h2 Contact us
+                .divider-1.wow.fadeInUp
+                    span
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    | et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+        .row
+            .col-sm-12.contact-form.wow.fadeInLeft
+                form(role='form', action='assets/contact.php', method='post')
+                    .form-group
+                        label.sr-only(for='contact-email') Email
+                        input#contact-email.contact-email(type='text', name='email', placeholder='Email...')
+                    .form-group
+                        label.sr-only(for='contact-subject') Subject
+                        input#contact-subject.contact-subject(type='text', name='subject', placeholder='Subject...')
+                    .form-group
+                        label.sr-only(for='contact-message') Message
+                        textarea#contact-message.contact-message(name='message', placeholder='Message...')
+                    button.btn(type='submit') Send message
