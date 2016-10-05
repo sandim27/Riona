@@ -1,18 +1,18 @@
-.what-we-do-box {
+.what-we-do_box {
     margin-top: 30px;
 }
 
-.what-we-do-box h3 {
+.what-we-do_box h3 {
     padding: 10px 0;
 }
 
-.what-we-do-box p {
+.what-we-do_box p {
     font-size: 18px;
     color: #aaa;
     line-height: 32px;
 }
 
-.what-we-do-box .what-we-do-box-icon {
+.what-we-do_box .what-we-do-box_icon {
     width: 120px;
     height: 120px;
     margin: 0 auto;
@@ -25,4 +25,4 @@
     text-align: center;
 }
 
-.what-we-do-box .what-we-do-box-icon i, .what-we-do-box .what-we-do-box-icon span { vertical-align: middle; }
+.what-we-do_box .what-we-do-box_icon i, .what-we-do_box .what-we-do-box_icon span { vertical-align: middle; }

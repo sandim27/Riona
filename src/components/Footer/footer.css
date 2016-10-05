@@ -4,13 +4,13 @@ footer {
     text-align: right;
 }
 
-.footer-copyright {
+.footer_copyright {
     margin: 11px 0 0 0;
     font-size: 18px;
     line-height: 32px;
     text-align: left;
 }
 
-.footer-social a { margin: 0 8px; font-size: 39px; color: #ddd; }
-.footer-social a:hover, .footer-social a:focus { color: #ddd; opacity: 0.6; }
+.footer_social a { margin: 0 8px; font-size: 39px; color: #ddd; }
+.footer_social a:hover, .footer_social a:focus { color: #ddd; opacity: 0.6; }
 

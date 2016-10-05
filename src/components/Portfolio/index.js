@@ -15,38 +15,38 @@ export default function getPortfolio() {
 
   $(window).on('load',retina,function() {
 
-    $('.portfolio-masonry').masonry({
-      columnWidth: '.portfolio-box',
-      itemSelector: '.portfolio-box',
+    $('.portfolio_masonry').masonry({
+      columnWidth: '.portfolio_box',
+      itemSelector: '.portfolio_box',
       transitionDuration: '0.5s'
     });
 
-    $('.portfolio-filters a').on('click', function(e) {
+    $('.portfolio_filters a').on('click', function(e) {
       e.preventDefault();
       if(!$(this).hasClass('active')) {
-        $('.portfolio-filters a').removeClass('active');
+        $('.portfolio_filters a').removeClass('active');
         var clickedFilter = $(this).attr('class').replace('filter-', '');
         $(this).addClass('active');
         if( clickedFilter != 'all' ) {
-          $('.portfolio-box:not(.' + clickedFilter + ')').css('display', 'none');
-          $('.portfolio-box:not(.' + clickedFilter + ')').removeClass('portfolio-box');
-          $('.' + clickedFilter).addClass('portfolio-box');
+          $('.portfolio_box:not(.' + clickedFilter + ')').css('display', 'none');
+          $('.portfolio_box:not(.' + clickedFilter + ')').removeClass('portfolio_box');
+          $('.' + clickedFilter).addClass('portfolio_box');
           $('.' + clickedFilter).css('display', 'block');
-          $('.portfolio-masonry').masonry();
+          $('.portfolio_masonry').masonry();
         } else{
-          $('.portfolio-masonry > div').addClass('portfolio-box');
-          $('.portfolio-masonry > div').css('display', 'block');
-          $('.portfolio-masonry').masonry();
+          $('.portfolio_masonry > div').addClass('portfolio_box');
+          $('.portfolio_masonry > div').css('display', 'block');
+          $('.portfolio_masonry').masonry();
         }
       }
     });
 
     $(window).on('resize', function() {
-      $('.portfolio-masonry').masonry();
+      $('.portfolio_masonry').masonry();
     });
 
     // image popup
-    $('.portfolio-box-text').magnificPopup({
+    $('.portfolio-box_text').magnificPopup({
       type: 'image',
       gallery: {
         enabled: true,
@@ -61,7 +61,7 @@ export default function getPortfolio() {
       },
       callbacks: {
         elementParse: function(item) {
-          item.src = item.el.parent('.portfolio-box-text-container').siblings('img').attr('src');
+          item.src = item.el.parent('.portfolio-box_text-container').siblings('img').attr('src');
         }
       }
     });

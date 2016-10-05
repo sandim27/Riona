@@ -1,15 +1,15 @@
-.our-motto-container {
+.our-motto {
     background:url('img/2bg.jpg') center center!important;
     background-size: cover;
 }
 
-.our-motto, .our-motto p {
+.our-motto_description, .our-motto_description p {
     font-size: 22px;
     line-height: 36px;
     color: #fff;
 }
 
-.our-motto h2 { color: #fff; }
-.our-motto p { font-style: italic; }
-.our-motto-author { margin-top: 30px; }
+.our-motto_description h2 { color: #fff; }
+.our-motto_description p { font-style: italic; }
+.our-motto_author { margin-top: 30px; }
 

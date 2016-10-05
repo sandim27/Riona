@@ -21,35 +21,35 @@
 
 /***** Block 1 *****/
 
-.block-1-left {
+.block-1_left {
     padding-top: 30px;
     padding-bottom: 25px;
 }
 
-.block-1-right {
+.block-1_right {
     padding-top: 30px;
     padding-bottom: 20px;
     text-align: left;
 }
 
-.block-1-right h3 {
+.block-1_right h3 {
     padding: 10px 0;
 }
-.block-1-right h3:first-child { margin-top: 0; }
+.block-1_right h3:first-child { margin-top: 0; }
 
-.block-1-right p {
+.block-1_right p {
     font-size: 18px;
     color: #aaa;
     line-height: 32px;
 }
 
-.block-1-right ul {
+.block-1_right ul {
     padding: 0;
     list-style: none;
     font-size: 18px;
     line-height: 32px;
 }
 
-.block-1-right ul li {
+.block-1_right ul li {
     padding: 5px 0;
 }

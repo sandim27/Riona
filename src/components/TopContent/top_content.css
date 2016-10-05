@@ -4,18 +4,18 @@
     background-size: cover;
 }
 
-.top-content-text {
+.top-content_text {
     width: 700px;
     margin: 0 auto;
     color: #fff;
 }
 
-.top-content-text h1,
-.top-content-text h1 a,
-.top-content-text h1 a:hover,
-.top-content-text h1 a:focus { color: #fff; text-decoration: none; }
+.top-content_text h1,
+.top-content_text h1 a,
+.top-content_text h1 a:hover,
+.top-content_text h1 a:focus { color: #fff; text-decoration: none; }
 
-.top-content-text p {
+.top-content_text p {
     opacity: 0.9;
     margin-top: 40px;
     font-size: 22px;
@@ -23,8 +23,8 @@
     font-style: italic;
 }
 
-.top-content-bottom-link {
+.top-content_bottom-link {
     padding-top: 30px;
     padding-bottom: 7px;
 }
-.top-content-bottom-link .big-link-1 { background: none; border: 1px solid #fff; }
+.top-content_bottom-link .big-link-1 { background: none; border: 1px solid #fff; }

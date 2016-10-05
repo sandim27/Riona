@@ -3,21 +3,21 @@
     padding: 0;
 }
 
-.testimonial-single {
+.testimonial_single {
     display: inline-block;
 }
 
-.testimonial-single p {
+.testimonial_single p {
     display: none;
 }
 
-.testimonial-single-image {
+.testimonial-single_image {
     display: inline-block;
     width: 58px;
     margin: 0 5px 10px 5px;
 }
 
-.testimonial-single-image img {
+.testimonial-single_image img {
     width: 100%;
     opacity: 0.5;
     cursor: pointer;
@@ -25,6 +25,6 @@
     -moz-border-radius: 31px; -webkit-border-radius: 31px; border-radius: 31px;
 }
 
-.testimonial-active {
+.testimonial_active {
     padding-bottom: 20px;
 }

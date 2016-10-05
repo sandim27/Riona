@@ -1,33 +1,33 @@
 
-.team-box {
+.team_box {
     padding-top: 30px;
     padding-bottom: 15px;
 }
 
-.team-box h3 {
+.team_box h3 {
     padding: 10px 0;
 }
 
-.team-box p {
+.team_box p {
     font-size: 18px;
     color: #aaa;
     line-height: 32px;
 }
 
-.team-box .team-photo {
+.team_box .team_photo {
     width: 160px;
     height: 160px;
     margin: 0 auto;
 }
 
-.team-box .team-photo img {
+.team_box .team_photo img {
     width: 100%;
 }
 
-.team-box .team-social {
+.team_box .team-social {
     margin: 5px 0;
     font-size: 31px;
 }
 
-.team-box .team-social a { margin: 0 5px; color: #ddd; }
-.team-box .team-social a:hover, .team-box .team-social a:focus { color: #ddd; opacity: 0.6; }
+.team_box .team-social a { margin: 0 5px; color: #ddd; }
+.team_box .team-social a:hover, .team_box .team-social a:focus { color: #ddd; opacity: 0.6; }

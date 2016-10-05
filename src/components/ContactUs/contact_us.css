@@ -1,27 +1,27 @@
-.contact-form {
+.contact_form {
     padding-top: 30px;
     padding-bottom: 20px;
 }
 
-.contact-form p {
+.contact_form p {
     margin: 0;
     font-size: 18px;
     line-height: 32px;
 }
 
-.contact-form form {
+.contact_form form {
     max-width: 700px;
     margin: 0 auto;
 }
 
-.contact-form form input, .contact-form form textarea {
+.contact_form form input, .contact_form form textarea {
     width: 95%;
     height: 52px;
     margin-bottom: 5px;
 }
 
-.contact-form form textarea { height: 162px; }
+.contact_form form textarea { height: 162px; }
 
-.contact-form form button { width: 95%; }
+.contact_form form button { width: 95%; }
 
-.contact-form form .contact-error { border-color: #8ec1cd; }
+.contact_form form .contact_error { border-color: #8ec1cd; }

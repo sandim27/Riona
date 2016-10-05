@@ -6,14 +6,14 @@ export default function getContact() {
   $(document).ready(function() {
     $('#root').prepend(template);
 
-    $('.contact-form form input[type="text"], .contact-form form textarea').on('focus', function() {
-      $('.contact-form form input[type="text"], .contact-form form textarea').removeClass('contact-error');
+    $('.contact_form form input[type="text"], .contact_form form textarea').on('focus', function() {
+      $('.contact_form form input[type="text"], .contact_form form textarea').removeClass('contact-error');
     });
 
-    $('.contact-form form').submit(function(e) {
+    $('.contact_form form').submit(function(e) {
       e.preventDefault();
-      $('.contact-form form input[type="text"], .contact-form form textarea').removeClass('contact-error');
-      var postdata = $('.contact-form form').serialize();
+      $('.contact_form form input[type="text"], .contact_form form textarea').removeClass('contact-error');
+      var postdata = $('.contact_form form').serialize();
       $.ajax({
         type: 'POST',
         url: 'assets/contact.php',
@@ -21,23 +21,23 @@ export default function getContact() {
         dataType: 'json',
         success: function(json) {
           if(json.emailMessage != '') {
-            $('.contact-form form .contact-email').addClass('contact-error animated shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+            $('.contact_form form .contact_email').addClass('contact-error animated shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
               $(this).removeClass('animated shake');
             });
           }
           if(json.subjectMessage != '') {
-            $('.contact-form form .contact-subject').addClass('contact-error animated shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+            $('.contact_form form .contact_subject').addClass('contact-error animated shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
               $(this).removeClass('animated shake');
             });
           }
           if(json.messageMessage != '') {
-            $('.contact-form form textarea').addClass('contact-error animated shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+            $('.contact_form form textarea').addClass('contact-error animated shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
               $(this).removeClass('animated shake');
             });
           }
           if(json.emailMessage == '' && json.subjectMessage == '' && json.messageMessage == '') {
-            $('.contact-form form').fadeOut('fast', function() {
-              $('.contact-form').append('<p>Thanks for contacting us! We will get back to you very soon.</p>');
+            $('.contact_form form').fadeOut('fast', function() {
+              $('.contact_form').append('<p>Thanks for contacting us! We will get back to you very soon.</p>');
             });
           }
         }
@@ -45,11 +45,11 @@ export default function getContact() {
     });
 
     if (document.all && !document.addEventListener) {
-      $('.contact-email, .contact-subject, .contact-message').removeAttr('placeholder');
+      $('.contact_email, .contact_subject, .contact_message').removeAttr('placeholder');
 
-      $('.contact-email').val('Email...');
-      $('.contact-subject').val('Subject...');
-      $('.contact-message').text('Message...');
+      $('.contact_email').val('Email...');
+      $('.contact_subject').val('Subject...');
+      $('.contact_message').text('Message...');
     };
 
   });
