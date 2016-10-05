@@ -1,0 +1,30 @@
+
+.testimonials p {
+    padding: 0;
+}
+
+.testimonial-single {
+    display: inline-block;
+}
+
+.testimonial-single p {
+    display: none;
+}
+
+.testimonial-single-image {
+    display: inline-block;
+    width: 58px;
+    margin: 0 5px 10px 5px;
+}
+
+.testimonial-single-image img {
+    width: 100%;
+    opacity: 0.5;
+    cursor: pointer;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+    -moz-border-radius: 31px; -webkit-border-radius: 31px; border-radius: 31px;
+}
+
+.testimonial-active {
+    padding-bottom: 20px;
+}

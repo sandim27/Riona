@@ -1,0 +1,5 @@
+.scroll-to-top {
+    font-size: 36px;
+}
+.scroll-to-top a { color: #ddd; }
+.scroll-to-top a:hover, .scroll-to-top a:focus, .scroll-to-top a:active { outline: 0; opacity: 0.6; color: #ddd; }

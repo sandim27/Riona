@@ -1,0 +1,11 @@
+
+.our-motto, .our-motto p {
+    font-size: 22px;
+    line-height: 36px;
+    color: #fff;
+}
+
+.our-motto h2 { color: #fff; }
+.our-motto p { font-style: italic; }
+.our-motto-author { margin-top: 30px; }
+

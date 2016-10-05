@@ -1,0 +1,28 @@
+.top-content {
+    padding: 160px 0;
+}
+
+.top-content-text {
+    width: 700px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.top-content-text h1,
+.top-content-text h1 a,
+.top-content-text h1 a:hover,
+.top-content-text h1 a:focus { color: #fff; text-decoration: none; }
+
+.top-content-text p {
+    opacity: 0.9;
+    margin-top: 40px;
+    font-size: 22px;
+    line-height: 36px;
+    font-style: italic;
+}
+
+.top-content-bottom-link {
+    padding-top: 30px;
+    padding-bottom: 7px;
+}
+.top-content-bottom-link .big-link-1 { background: none; border: 1px solid #fff; }

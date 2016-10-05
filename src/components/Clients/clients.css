@@ -1,0 +1,15 @@
+.clients-container {
+    padding-bottom: 0;
+}
+
+.clients {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.clients a {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.clients a:hover, .clients a:focus { outline: 0; opacity: 0.6; }
