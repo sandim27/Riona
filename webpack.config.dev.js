@@ -67,7 +67,10 @@ module.exports = {
                 test: /bootstrap\/js\//,
                 loader: 'imports?jQuery=jquery'
             },
-            {test: /\.(jpg|png|gif)$/i, loader: "file?name=[name].[ext]"},
+            {
+                test: /\.(jpg|png|gif)$/i,
+                loader: "file?name=[name].[ext]"
+            }
 
         ]
     }

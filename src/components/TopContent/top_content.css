@@ -1,5 +1,7 @@
 .top-content {
     padding: 160px 0;
+    background:url('img/1bg.jpg') center center!important;
+    background-size: cover;
 }
 
 .top-content-text {

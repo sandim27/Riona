@@ -1,6 +1,7 @@
-
 .counters-container {
     padding-top: 50px;
+    background:url('img/2bg.jpg') center center!important;
+    background-size: cover;
 }
 
 .counter-box h4 {

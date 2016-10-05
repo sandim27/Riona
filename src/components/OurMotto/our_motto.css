@@ -1,3 +1,7 @@
+.our-motto-container {
+    background:url('img/2bg.jpg') center center!important;
+    background-size: cover;
+}
 
 .our-motto, .our-motto p {
     font-size: 22px;
