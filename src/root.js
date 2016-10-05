@@ -1,10 +1,5 @@
-//Includes common styles
-import 'font-awesome/css/font-awesome.min.css';
-import './styles/animate.css';
-import './styles/form-elements.css';
-import './styles/magnific-popup.css';
-import './styles/media-queries.css';
-import './styles/base.css';
+//Includes bootstrap components
+import 'bootstrap-webpack!../node_modules/bootstrap-webpack/bootstrap.config.js';
 
 //Includes all components
 import getLoader from './Components/Loader';
@@ -22,8 +17,13 @@ import getContact from './Components/ContactUs';
 import getScroll from './Components/ScrollToTop';
 import getFooter from './Components/Footer';
 
-//Includes bootstrap components
-import 'bootstrap-webpack!../node_modules/bootstrap-webpack/bootstrap.config.js';
+//Includes common styles
+import 'font-awesome/css/font-awesome.min.css';
+import './styles/base.css';
+import './styles/animate.css';
+import './styles/form-elements.css';
+import './styles/magnific-popup.css';
+import './styles/media-queries.css';
 
 getFooter();
 getScroll();
@@ -31,7 +31,6 @@ getContact();
 getTeam();
 getTestimonials();
 getPortfolio();
-getCounters();
 getCounters();
 getClients();
 getMotto();

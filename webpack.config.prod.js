@@ -2,6 +2,9 @@ var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+var precss = require('precss');
+var autoprefixer = require('autoprefixer');
+
 
 module.exports = {
     entry: [
@@ -58,7 +61,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+                loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader')
             },
             {
                 test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -75,8 +78,10 @@ module.exports = {
             {
                 test: /\.(jpg|png|gif)$/i,
                 loader: 'file-loader?name=images/[name].[ext]'
-            },
-
+            }
         ]
+    },
+    postcss: function () {
+        return [precss, autoprefixer];
     }
 }

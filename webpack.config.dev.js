@@ -1,6 +1,8 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var precss = require('precss');
+var autoprefixer = require('autoprefixer');
 
 module.exports = {
     devtool: 'source-map',
@@ -49,11 +51,11 @@ module.exports = {
             },
             {
                 test: /\.jade$/,
-                loader: 'jade-loader'
+                loader: 'pug-loader'
             },
             {
                 test: /\.css$/,
-                loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+                loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader')
             },
             {
                 test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -69,9 +71,12 @@ module.exports = {
             },
             {
                 test: /\.(jpg|png|gif)$/i,
-                loader: "file?name=[name].[ext]"
+                loader: 'file-loader?name=images/[name].[ext]'
             }
 
         ]
+    },
+    postcss: function () {
+        return [precss, autoprefixer];
     }
 }
