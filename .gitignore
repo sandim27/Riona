@@ -1,5 +1,3 @@
 .idea/
 node_modules/
-npm-debug.log.3321830398
-npm-debug.log.145690768
-npm-debug.log.1792829936
+npm-debug.log*
