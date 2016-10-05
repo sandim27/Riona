@@ -1,6 +1,5 @@
 import './our_process.css';
 import template from './our_process.jade';
-import $ from 'jquery';
 
 function smallSlider1(sliderContainer) {
   var imgIndex = 1;

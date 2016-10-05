@@ -1,6 +1,5 @@
 import './testimonials.css';
 import template from './testimonials.jade';
-import $ from 'jquery';
 
 export default function getTestimonials() {
   $(document).ready(function() {

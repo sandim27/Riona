@@ -1,6 +1,5 @@
 import './portfolio.css';
 import template from './portfolio.jade';
-import $ from 'jquery';
 import 'magnific-popup';
 import 'jquery-bridget/jquery-bridget';
 import Masonry from 'masonry-layout';

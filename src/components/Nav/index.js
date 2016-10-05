@@ -1,7 +1,5 @@
 import './nav.css';
 import template from './nav.jade';
-import $ from 'jquery';
-
 
 export default function getNav() {
 

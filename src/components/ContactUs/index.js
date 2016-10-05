@@ -1,6 +1,5 @@
 import './contact_us.css';
 import template from './contact_us.jade';
-import $ from 'jquery';
 
 export default function getContact() {
 

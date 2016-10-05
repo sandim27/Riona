@@ -1,6 +1,5 @@
 import './loader.css';
 import template from './loader.jade';
-import $ from 'jquery';
 import WOW from 'wow.js';
 
 export default function getLoader() {
